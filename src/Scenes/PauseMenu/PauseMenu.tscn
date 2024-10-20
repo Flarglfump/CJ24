@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://jhi38gqp5rme"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_v0yru"]
+
+[node name="PauseMenu" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.00784314, 0.0823529, 0.0941176, 0.113725)
+show_behind_parent = true
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = SubResource("ViewportTexture_v0yru")
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 4
+alignment = 1
+
+[node name="Resume" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(480, 135)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 64
+text = "Resume"
+
+[node name="Spacer1" type="Control" parent="Buttons"]
+custom_minimum_size = Vector2(2.08165e-12, 135)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Options" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(480, 135)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 64
+text = "Options"
+
+[node name="Spacer2" type="Control" parent="Buttons"]
+custom_minimum_size = Vector2(2.08165e-12, 135)
+layout_mode = 2
+
+[node name="Quit" type="Button" parent="Buttons"]
+custom_minimum_size = Vector2(480, 135)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 64
+text = "Quit"
